@@ -1,7 +1,6 @@
 var $greet = document.querySelector('.message');
-document.addEventListener('load', greeting);
 
-function greeting(event) {
+function greeting() {
   $greet.textContent = 'Hello, There';
 }
 

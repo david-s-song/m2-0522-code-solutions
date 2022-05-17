@@ -7,8 +7,8 @@ function countDown(event) {
     $display.textContent = count;
   } else {
     $display.textContent = '~Earth Beeeelooowww Us~';
-    clearInterval();
+    clearInterval(timer);
   }
 }
 
-setInterval(countDown, 2000);
+var timer = setInterval(countDown, 2000);
