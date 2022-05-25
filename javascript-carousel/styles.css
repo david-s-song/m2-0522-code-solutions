@@ -1,0 +1,61 @@
+.container {
+  max-width: 800px;
+}
+
+.hidden {
+  display: none;
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding-bottom: 40px;
+}
+
+.img-track {
+  height: 300px;
+  width: 300px;
+}
+
+i {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.dots-track {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.dot-white {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.current-dot-black {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: black;
+}
