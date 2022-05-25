@@ -43,22 +43,32 @@ var $fifthDot = document.querySelector('#fifth');
 
 $firstDot.addEventListener('click', function () {
   switchImage(currentIndex = 1);
+  autoImages(autoIndex = 0);
+  autoDots(dotIndex = 0);
 });
 $secondDot.addEventListener('click', function () {
   switchImage(currentIndex = 2);
+  autoImages(autoIndex = 1);
+  autoDots(dotIndex = 1);
 });
 $thirdDot.addEventListener('click', function () {
   switchImage(currentIndex = 3);
+  autoImages(autoIndex = 2);
+  autoDots(dotIndex = 2);
 });
 $fourthDot.addEventListener('click', function () {
   switchImage(currentIndex = 4);
+  autoImages(autoIndex = 3);
+  autoDots(dotIndex = 3);
 });
 $fifthDot.addEventListener('click', function () {
   switchImage(currentIndex = 5);
+  autoImages(autoIndex = 4);
+  autoDots(dotIndex = 4);
 });
 
 var autoIndex = 0;
-autoImages();
+setInterval(autoImages, 3000);
 
 function autoImages() {
   for (var i = 0; i < $images.length; i++) {
@@ -69,11 +79,10 @@ function autoImages() {
     autoIndex = 1;
   }
   $images[autoIndex - 1].className = 'image current-image';
-  setTimeout(autoImages, 3000);
 }
 
 var dotIndex = 0;
-autoDots();
+setInterval(autoDots, 3000);
 
 function autoDots() {
   for (var i = 0; i < $dots.length; i++) {
@@ -84,5 +93,4 @@ function autoDots() {
     dotIndex = 1;
   }
   $dots[dotIndex - 1].className = 'current-dot-black';
-  setTimeout(autoDots, 3000);
 }
